@@ -1,0 +1,19 @@
+Created a Pet Supplies store database.
+
+CREATE TABLE pet_supplies (id INTEGER PRIMARY KEY, name TEXT, price INTEGER, quantity INTEGER, sold INTEGER);
+
+INSERT INTO pet_supplies VALUES (1, "treats", 7, 10, 11);
+INSERT INTO pet_supplies VALUES (2, "food", 20, 8, 17);
+INSERT INTO pet_supplies VALUES (3, " water bowls", 18, 15, 35);
+Insert INTO pet_supplies VALUES (4, "leashes", 8, 12, 16);
+SELECT * FROM pet_supplies;
+
+-created table to show the items that sold more than 15
+SELECT * FROM pet_supplies WHERE sold > 15;
+
+- ordered the tiems by price
+Select * FROM pet_supplies Order by price desc;
+
+-created table to show how many items were sold in total
+SELECT SUM(sold) FROM pet_supplies;
+
